@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aircraft Lease Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700|Noto+Sans:400,700|Montserrat:400,700">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img id="header-pic" src="https://github.com/maticly/img/blob/main/20240617-180706-f66-planet-volumes-ih3vzhkuj8e-unsplash2.jpg?raw=true" alt="aircraft">
+    <div id="header-text">
+      <h1 id="header-text-1">Commercial Jet Lease Estimator</h1>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="main-container">
+    <form id="lease-form">
+      <section>
+        <h2>1. Choose Aircraft Model:</h2>
+
+          <h3>Boeing</h3>
+            <div class="aircraft-grid">
+              <div class="aircraft-item" id="Boeing-737-800">
+                <img src="https://github.com/maticly/img/blob/main/gallery-full-01.jpeg?raw=true" alt="Boeing 737-800">
+                <span>Boeing 737-800</span>
+              </div>
+              
+              <div class="aircraft-item" id="Boeing-737-MAX-8">
+                <img src="https://github.com/maticly/img/blob/main/737-max.jpeg?raw=true" alt="Boeing 737 MAX 8">
+                <span>Boeing 737 MAX 8</span>
+              </div>
+              
+              <div class="aircraft-item" id="Boeing-747-400-VIP">
+                <img src="https://github.com/maticly/img/blob/main/747-8f-.jpeg?raw=true" alt="Boeing 747-400 VIP">
+                <span>Boeing 747-400 VIP</span>
+              </div>
+              
+              <div class="aircraft-item" id="Boeing-767-300HD">
+                <img src="https://github.com/maticly/img/blob/main/767.jpeg?raw=true" alt="Boeing 767-300 HD">
+                <span>Boeing 767-300 HD</span>
+              </div>
+              
+              <div class="aircraft-item" id="Boeing-777-300ER">
+                <img src="https://github.com/maticly/img/blob/main/777.jpeg?raw=true" alt="Boeing 777-300ER">
+                <span>Boeing 777-300ER</span>
+              </div>
+              
+              <div class="aircraft-item" id="Boeing-787-9">
+                <img src="https://github.com/maticly/img/blob/main/787.jpg?raw=true" alt="Boeing 787-9">
+                <span>Boeing 787-9</span>
+              </div>
+            </div>
+
+            <h3>Airbus</h3>
+              <div class="aircraft-grid">
+                <div class="aircraft-item" id="Airbus-A220">
+                  <img src="https://github.com/maticly/img/blob/main/A220.png?raw=true" alt="Airbus A220">
+                  <span>Airbus A220</span>
+                </div>
+                
+                <div class="aircraft-item" id="Airbus-A320">
+                  <img src="https://github.com/maticly/img/blob/main/320.png?raw=true" alt="Airbus A320">
+                  <span>Airbus A320</span>
+                </div>
+                
+                <div class="aircraft-item" id="Airbus-A321">
+                  <img src="https://github.com/maticly/img/blob/main/321.png?raw=true" alt="Airbus A321">
+                  <span>Airbus A321</span>
+                </div>
+                
+                <div class="aircraft-item" id="Airbus-A321neo">
+                  <img src="https://github.com/maticly/img/blob/main/A321neo.jpg?raw=true" alt="Airbus A321neo">
+                  <span>Airbus A321neo</span>
+                </div>
+                
+                <div class="aircraft-item" id="Airbus-A330-300">
+                  <img src="https://github.com/maticly/img/blob/main/330-300.png?raw=true" alt="Airbus A330-300">
+                  <span>Airbus A330-300</span>
+                </div>
+                
+                <div class="aircraft-item" id="Airbus-A330neo">
+                  <img src="https://github.com/maticly/img/blob/main/330neo.png?raw=true" alt="Airbus A330neo">
+                  <span>Airbus A330neo</span>
+                </div>
+                
+                <div class="aircraft-item" id="Airbus-A350">
+                  <img src="https://github.com/maticly/img/blob/main/350.png?raw=true" alt="Airbus A350">
+                  <span>Airbus A350</span>
+                </div>
+            </div>
+      </section>
+      
+<!--FLIGHT DETAILS --------------------------------->  
+      <section>
+        <h2>2. Enter Flight Details:</h2>
+        <label for="origin-airport">Origin Airport:</label>
+        <input type="text" id="origin-airport" placeholder="Enter Origin Airport" required>
+
+        <label for="destination-airport">Destination Airport:</label>
+        <input type="text" id="destination-airport" placeholder="Enter Destination Airport" required>
+
+        <button type="button" id="calculate-distance">Autofill Distance & Time</button>
+
+        <label for="distance">Flight Distance (miles):</label>
+        <input type="number" id="distance" name="distance" readonly>
+
+        <label for="flight-hours">Flight Hours:</label>
+        <input type="number" id="flight-hours" name="flight_hours" readonly>
+      </section>
+
+    
+<!--AIRPORT FEES --------------------------------->  
+<section>
+        <h2>3. Airport Fees</h2>
+        <h3>Choose the Size of the Destination Airport</h3>
+        <div class="airport-class-images">
+          <div>
+            <img src="https://github.com/maticly/img/blob/main/Aero_Tech_BU__11_-removebg-preview.png?raw=true" alt="Major Hub">
+            <span>Major Hub</span>
+          </div>
+          <div>
+            <img src="https://github.com/maticly/img/blob/main/Aero_Tech_BU__10_-removebg-preview.png?raw=true" alt="Regional">
+            <span>Regional</span>
+          </div>
+          <div>
+            <img src="https://github.com/maticly/img/blob/main/Aero_Tech_BU__9_-removebg-preview.png?raw=true" alt="Small">
+            <span>Small</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. Adjust Seat Configuration:</h2>
+
+        <h3>Economy Seats:</h3>
+        <div class="seat-container">
+        <label for="economy-seats"></label>
+        <input type="range" min="0" max="200" step="1" id="economy-seats" name="economy_seats">
+        <hr class="solid">
+        </div>
+        
+        <h3>Business Seats:</h3>
+        <label for="business-seats"></label>
+        <input type="range" min="0" max="50" step="1" id="business-seats" name="business_seats">
+        
+      </section>
+
+      <section>
+        <h2>5. Select Stopovers:</h2>
+        <label for="stopovers">Number of Stopovers:</label>
+        <input type="range" min="0" max="3" step="1" id="stopovers" name="stopovers">
+      </section>
+
+      <button type="submit">Calculate</button>
+    </form>
+  </main>
+
+<footer>
+  <p>&copy; 2025 Aircraft Lease Calculator. All Rights Reserved.</p>
+</footer>
+   </div>
+<script src="script.js"></script>
+</body>
+</html>
