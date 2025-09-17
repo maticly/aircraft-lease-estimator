@@ -1,0 +1,189 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #111111;
+  color: #ffffff;
+  line-height: 1;
+  overflow-x: hidden;
+  margin: 0 auto; 
+  padding: 20px;
+  max-width: 1560px; 
+}
+
+/* Header */
+
+header {
+  overflow: hidden;
+  position: relative;
+}
+
+.header-container {
+  position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#header-pic {
+   object-fit: cover;
+   max-width: 100%; 
+   height: auto;
+}
+
+#header-text {
+  position: absolute;
+  top: 30%;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+
+h2, h3 {
+  margin-bottom: 20px;
+}
+
+/* Main Container */
+
+.main-container {
+   max-width: 800px;
+  margin: 0 auto;
+}
+
+form {
+  background-color: #222222;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  padding: 15px 0 5px 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #444444;
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff5600;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7800;
+}
+
+section {
+  padding-bottom: 30px;
+
+/* Aircraft Grid */
+.aircraft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin-bottom: 15px;
+}
+
+.aircraft-item {
+  background-color: #222222;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.aircraft-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.aircraft-item img {
+  width: 100%;
+  height: 70%;
+  border-radius: 2px; /* Rounded edges for images */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+  margin-bottom: 5px;
+}
+
+span {
+  color: #66CCFF; 
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+/* Airport Class Images */
+.airport-class-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.airport-class-images div {
+  background-color: #363636;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.airport-class-images div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.airport-class-images img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.airport-class-images span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Adjust Seat Configuration */
+  .seat-container {
+    margin-bottom: 20px;
+  }
+  
+  hr {
+    margin-top: 5px;
+    border-color: #363636;
+  }
+  
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .aircraft-grid,
+  .airport-class-images {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
