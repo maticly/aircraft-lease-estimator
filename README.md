@@ -4,6 +4,13 @@ Estimate the operational cost of leasing commercial aircraft based on route, air
 
 ---
 
+##🔗 Live Demos & Interactive Tools
+**📊 Backend – Colab Notebook**
+- [Colab Notebook – Backend](https://colab.research.google.com/drive/1hX0ezbuSTbUB39hfB4iXGDlhASeDt_-y?usp=sharing)
+
+**🎨 Frontend – CodePen UI**
+- [CodePen UI – Frontend](https://codepen.io/Mati-the-vuer/full/ogvpgbd)
+
 ## 📦 Tech Stack
 
 - **Python**: Core language
