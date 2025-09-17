@@ -1,5 +1,4 @@
 # ✈️ Aircraft Lease Estimator – Backend + UI
-# ✈️ Aircraft Lease Estimator – Backend + UI
 
 Estimate the operational cost of leasing commercial aircraft based on route, aircraft model, seating configuration, and airport class. This backend powers a dynamic leasing calculator with real-world aviation data and interactive UI integration.
 
